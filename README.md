@@ -1,5 +1,5 @@
 # 6063B 2024F
 
-## Week 03
+## Week 03 B
 
-### Nested for loop example
+### For loop example

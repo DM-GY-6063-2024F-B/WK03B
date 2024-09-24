@@ -22,13 +22,20 @@ function setup() {
 
   strokeWeight(2);
 
-  // draw a column of rows
-  for (let y = 50; y < height; y += 100) {
-    // draw a row of stars
-    for (let x = 50; x < width; x += 100) {
-      star(x, y, 100, 15);
-    }
+  push();
+
+  noFill();
+  translate(500, height / 2);
+  for (let d = 20; d < 1000; d += 20){
+    ellipse(0, 0, d);
   }
+
+  translate(-30, 0);
+  for (let d = 20; d < 1000; d += 20){
+    ellipse(0, 0, d);
+  }
+
+  pop();
 }
 
 function draw() {}
